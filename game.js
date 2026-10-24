@@ -2,20 +2,20 @@
 // MÓDULO 1: GOOGLE CLOUD FIRESTORE INTEGRATION
 // ============================================================================
 
-/* COLOQUE AS SUAS CREDENCIAIS DO GOOGLE CLOUD / FIREBASE AQUI */
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "SUA_API_KEY_AQUI",
-    authDomain: "SEU_PROJECT_ID.firebaseapp.com",
-    projectId: "SEU_PROJECT_ID",
-    storageBucket: "SEU_PROJECT_ID.appspot.com",
-    messagingSenderId: "SEU_SENDER_ID",
-    appId: "SEU_APP_ID"
+  apiKey: "AIzaSyBqcoqj5ml2bAN2J8Os-pcS7paCap98jxw",
+  authDomain: "galang-cee38.firebaseapp.com",
+  projectId: "galang-cee38",
+  storageBucket: "galang-cee38.firebasestorage.app",
+  messagingSenderId: "484525930676",
+  appId: "1:484525930676:web:03df92610d99df55f4ffe1",
+  measurementId: "G-EY8V2P5ZKB"
 };
-
 // Inicializa o Firebase apenas se a chave for informada
 let db = null;
 try {
-    if (firebaseConfig.apiKey !== "SUA_API_KEY_AQUI") {
+    if (firebaseConfig.apiKey !== "AIzaSyBqcoqj5ml2bAN2J8Os-pcS7paCap98jxw") {
         firebase.initializeApp(firebaseConfig);
         db = firebase.firestore();
         console.log("Conectado ao Google Cloud Firestore!");
